@@ -12,7 +12,10 @@ export default defineConfig({
         "./Button": "./src/components/Button",
         "./Header": "./src/components/Header",
       },
-      shared: ["react", "react-dom"],
+      remotes: {
+        kycRemote: 'http://localhost:5002/assets/remoteEntry.js'
+      },
+      shared: ["react", "react-dom",'@reduxjs/toolkit', 'react-redux'],
     }),
   ],
   build: {

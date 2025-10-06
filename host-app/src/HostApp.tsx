@@ -18,7 +18,6 @@ function Main() {
 <Suspense fallback={<>loading kyc app....</>} >
       <KycApp
         onComplete={(res: Record<string, unknown>) => {
-          console.log("KYC result from Host:", res);
           dispatch(setKycResult(res));
         }}
       />

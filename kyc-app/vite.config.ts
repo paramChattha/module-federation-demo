@@ -10,6 +10,7 @@ export default defineConfig({
       filename: "remoteEntry.js",
       exposes: {
         "./KycApp": "./src/KycApp",
+        "./store":"./src/store"
       },
       shared: ["react", "react-dom",'@reduxjs/toolkit', 'react-redux'],
     }),
